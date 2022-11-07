@@ -1,0 +1,145 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+}
+
+.header-logo {
+    color: $logo-trailing-color;
+    margin-right: 94px;
+}
+
+.header-logo__color {
+    color: $logo-leading-color;
+}
+
+.header-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-nav__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $header-link-color;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.header-nav__list {
+    margin-right: 50px;
+    display: flex;
+}
+
+
+.header-nav__link {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: $header-link-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $transition;
+
+    &:focus,
+    &:hover {
+        color: $logo-leading-color;
+        cursor: pointer;
+    }
+}
+
+
+.selected {
+    color: $logo-leading-color;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $logo-leading-color;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        border-radius: 2px;
+        bottom: -1px;
+    }
+}
+
+.header-container__block {
+    display: flex;
+    align-items: center;
+}
+
+.header-contact {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-contact__list {
+    margin-left: 50px;
+}
+
+.header-contact__mail {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $main-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $transition;
+
+    &:focus,
+    &:hover {
+        color: $logo-leading-color;
+    }
+}
+
+.header-contact__tel {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $main-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $transition;
+
+    &:focus,
+    &:hover {
+        color: $logo-leading-color;
+    }
+}
+
+.mail-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover {
+        fill: $logo-leading-color;
+    }
+}
+
+.phone-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover {
+        fill: $logo-leading-color;
+    }
+}

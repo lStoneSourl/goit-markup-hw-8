@@ -1,0 +1,50 @@
+.client {
+    display: block;
+}
+
+.client__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-link-color;
+    margin-bottom: 50px;
+}
+
+.client__item {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.client__list {
+    width: 170px;
+    text-align: center;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $border-link;
+    border-radius: 4px;
+    transition: border-color $transition;
+
+    &:focus,
+    &:hover {
+        border-color: $logo-leading-color;
+    }
+}
+
+.client__icon {
+    fill: $border-link;
+    transition: fill $transition;
+}
+
+.client__link:focus .client__icon,
+.client__link:hover .client__icon {
+    fill: $logo-leading-color;
+}

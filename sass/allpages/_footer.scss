@@ -1,0 +1,158 @@
+.footer-content {
+    background-color: $background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-content>.container {
+    display: flex;
+    align-items: baseline;
+    gap: 93px;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: $main-back-color;
+    margin-bottom: 20px;
+}
+
+.footer-logo__color {
+    color: $logo-leading-color;
+}
+
+.footer-contact {
+    list-style-type: none;
+}
+
+.footer-contact__list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-contact__adress {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-back-color;
+    transition: color $transition;
+
+    &:focus,
+    &:hover {
+        color: $logo-leading-color;
+    }
+}
+
+.footer-contact__mail,
+.footer-contact__tel {
+    display: block;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $footer-shadow;
+    transition: color $transition;
+    
+    &:focus,
+    &:focus,
+    &:hover,
+    &:hover {
+        color: $logo-leading-color;
+    }
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-back-color;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.footer-item__list {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-color $transition;
+
+    &:focus,
+    &:hover {
+        background-color: $logo-leading-color;
+    }
+}
+
+.footer-link__icon {
+    fill: $main-back-color;
+}
+
+.contact-us {
+    display: inline-block;
+}
+
+.contact-us__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-back-color;
+    margin-bottom: 20px;
+}
+
+.contact-us__form {
+    display: flex;
+    gap: 12px;
+}
+
+.contact-us__mail {
+    background-color: inherit;
+    width: 358px;
+    color: $main-back-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $main-back-color;
+    background-color: $logo-leading-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    border: none;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.contact-btn__icon {
+    margin-left: 10px;
+}
