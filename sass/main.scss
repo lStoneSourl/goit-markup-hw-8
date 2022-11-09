@@ -1,9 +1,9 @@
-@import "./variebles";
+@import "./utils/variebles";
 @import "./base/fonts";
 @import "./base/normalize";
-@import "./global";
-@import "./allpages/header";
-@import "./allpages/footer";
-@import "./index/index";
-@import "./portfolio/portfolio";
-@import "./modal/backdrop";
+@import "./base/global";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/index";
+@import "./components/portfolio";
+@import "./components/backdrop";
