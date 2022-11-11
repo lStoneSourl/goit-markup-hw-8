@@ -193,3 +193,20 @@
         fill: $logo-leading-color;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .backdrop-modal {
+        width: 450px;
+        height: 609px;
+    }
+
+    .modal-label__input,
+    .modal-label__comment {
+        width: 370px;
+    }
+
+    .check-box__span {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}

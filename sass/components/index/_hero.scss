@@ -49,3 +49,24 @@
         cursor: pointer;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero-section {
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: url(../../../images/Headerimg.jpg);
+    }
+
+    .hero-title {
+        font-size: 26px;
+        line-height: 1.61;
+        max-width: 360px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        line-height: 1.87;
+        padding: 10px 24px;
+    }
+}

@@ -25,6 +25,7 @@
 }
 
 .employee__list {
+    max-width: 270px;
     background-color: $main-back-color;
     box-shadow:
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -93,4 +94,19 @@
 .employee-contact__link:focus .employee-contact__icon,
 .employee-contact__link:hover .employee-contact__icon {
     fill: $main-back-color;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team__title {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    .employee {
+        flex-wrap: wrap;
+    }
+
+    .employee__list {
+        max-width: 354px;
+    }
 }

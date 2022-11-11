@@ -156,3 +156,27 @@
 .contact-btn__icon {
     margin-left: 10px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-content>.container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-content>.container>div {
+        text-align: center;
+    }
+
+    .contact-us__form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us__mail {
+        width: 450px;
+    }
+
+    .contact-btn {
+        max-width: 200px;
+    }
+}
