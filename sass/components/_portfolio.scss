@@ -73,7 +73,8 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &:hover .portfolio-visual__text {
+    &:hover .portfolio-visual__text,
+    &:focus .portfolio-visual__text {
         transform: translateY(-100%);
     }
 }
