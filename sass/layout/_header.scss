@@ -13,6 +13,31 @@
     color: $logo-leading-color;
 }
 
+.menu-toggle {
+    display: flex;
+    min-width: 40px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: $main-back-color;
+    border: none;
+    cursor: pointer;
+
+    &:hover .mobile-icon,
+    &:focus .mobile-icon {
+        fill: $logo-leading-color;
+    }
+}
+
+.mobile-icon {
+    display: flex;
+    fill: $logo-trailing-color;
+    align-items: center;
+    justify-content: center;
+}
+
 .header-nav {
     font-weight: 500;
     font-size: 14px;
@@ -144,6 +169,17 @@
     }
 }
 
+@media screen and (max-width:767px) {
+    .header-nav,
+    .header-contact {
+        display: none;
+    }
+
+    .header-container__block {
+        justify-content: space-between;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .header-contact {
         flex-wrap: wrap;
@@ -171,5 +207,11 @@
     .mail-icon,
     .phone-icon {
         margin-right: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
     }
 }

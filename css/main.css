@@ -343,6 +343,41 @@ p {
   color: #2196F3;
 }
 
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.menu-toggle:hover .mobile-icon, .menu-toggle:focus .mobile-icon {
+  fill: #2196F3;
+}
+
+.mobile-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header-nav {
   font-weight: 500;
   font-size: 14px;
@@ -481,6 +516,17 @@ p {
   fill: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav,
+.header-contact {
+    display: none;
+  }
+  .header-container__block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact {
     -ms-flex-wrap: wrap;
@@ -504,6 +550,11 @@ p {
   .mail-icon,
 .phone-icon {
     margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }
 .footer-content {
@@ -1478,4 +1529,29 @@ p {
     font-size: 12px;
     line-height: 1.17;
   }
+}
+.mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.mobile-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }/*# sourceMappingURL=main.css.map */
