@@ -169,7 +169,7 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: $max-mobile) {
     .header-nav,
     .header-contact {
         display: none;
@@ -180,7 +180,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $min-tablet) and (max-width: $tablet) {
     .header-contact {
         flex-wrap: wrap;
     }
@@ -210,7 +210,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $min-tablet) {
     .menu-toggle {
         display: none;
     }

@@ -31,15 +31,22 @@ p {
     padding: 0 15px;
 }
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $min-mobile) {
     .container {
         max-width: 100vw;
     }
@@ -50,39 +57,19 @@ p {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: $mobile) {
     .container {
         width: 450px;
     }
-
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .logo {
-        font-size: 24px;
-        line-height: 1.17;
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $min-tablet) and (max-width: $tablet) {
     .container {
         width: 768px;
     }
-
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .logo {
-        font-size: 24px;
-        line-height: 1.17;
-    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
     .container {
         width: 1200px;
     }

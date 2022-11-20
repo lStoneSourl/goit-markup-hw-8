@@ -6,8 +6,8 @@
 
 .client__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: $header-link-color;
@@ -16,13 +16,14 @@
 
 .client__item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     gap: 30px;
 }
 
 .client__list {
-    width: 170px;
+    min-width: 210px;
     text-align: center;
 }
 
@@ -52,27 +53,27 @@
     fill: $logo-leading-color;
 }
 
-@media screen and (max-width: 767px) {
-    .client__item {
-        flex-wrap: wrap;
-    }
-
+@media screen and (min-width: $min-tablet) {
     .client__list {
-        min-width: 210px;
+        min-width: 226px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .client__title {
-        font-size: 28px;
-        line-height: 1.18;
+@media screen and (min-width: $desktop) {
+    .client {
+        width: 1200px;
     }
 
     .client__item {
-    flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+
+    .client__title {
+        font-size: 36px;
+        line-height: 1.17;
     }
 
     .client__list {
-        width: 226px;
+        min-width: 170px;
     }
 }

@@ -6,8 +6,8 @@
 
 .team__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: $header-link-color;
     text-align: center;
@@ -16,12 +16,6 @@
 
 .employee {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    gap: 30px;
-    padding: 0;
-
 }
 
 .employee__list {
@@ -96,16 +90,7 @@
     fill: $main-back-color;
 }
 
-@media screen and (max-width: 767px) {
-    .team__title {
-        font-size: 28px;
-        line-height: 1.18;
-    }
-
-    .employee {
-        display: block;
-    }
-
+@media screen and (max-width: $max-mobile) {
     .employee__list {
         max-width: 450px;
 
@@ -115,17 +100,27 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .team__title {
-        font-size: 28px;
-        line-height: 1.18;
-    }
-
+@media screen and (min-width: $min-tablet) {
     .employee {
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        margin: auto;
+        gap: 30px;
+        padding: 0;
     }
 
     .employee__list {
         max-width: 354px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .employee {
+        flex-wrap: nowrap;
+    }
+    .team__title {
+        font-size: 36px;
+        line-height: 1.17;
     }
 }

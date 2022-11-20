@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 8px;
 }
@@ -47,12 +48,10 @@
     }
 }
 
-
-
 .portfolio-card {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 100%;
     gap: 30px;
 }
@@ -121,21 +120,13 @@
     color: $main-color;
 }
 
-@media screen and (max-width: 767px) {
-    .portfolio-filter {
-        flex-wrap: wrap;
-    }
-
-    .portfolio-card {
-        grid-template-columns: 1fr;
-    }
-
+@media screen and (max-width: $max-mobile) {
     .portfolio-visual__text {
         padding: 77px 24px 10px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $min-tablet) and (max-width: $tablet) {
     .portfolio-filter {
         margin-bottom: 30px;
     }
@@ -156,5 +147,11 @@
 
     .portfolio-description {
         height: 147px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .portfolio-card {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

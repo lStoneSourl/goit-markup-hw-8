@@ -6,7 +6,8 @@
 
 .footer-content>.container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 93px;
 }
 
@@ -120,7 +121,8 @@
 
 .contact-us__form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-us__mail {
@@ -136,6 +138,7 @@
 .contact-btn {
     display: flex;
     align-items: center;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -157,12 +160,7 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
-    .footer-content>.container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
+@media screen and (max-width: $max-mobile) {
     .footer-content>.container>div {
         text-align: center;
     }
@@ -171,29 +169,14 @@
         text-align: center;
     }
 
-    .contact-us__form {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .contact-us__mail {
         max-width: 450px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .footer-content>.container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
+@media screen and (min-width: $min-tablet) and (max-width: $tablet) {
     .footer-content>.container>div {
         text-align: center;
-    }
-
-    .contact-us__form {
-        flex-direction: column;
-        align-items: center;
     }
 
     .contact-us__mail {
@@ -205,8 +188,19 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
+    .footer-content>.container {
+        display: flex;
+        align-items: baseline;
+    }
     .contact-us__mail {
         width: 358px;
+    }
+    .contact-us__form {
+        flex-direction: row;
+        gap: 12px;
+    }
+    .contact-btn {
+        margin: 0;
     }
 }

@@ -7,7 +7,6 @@
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    align-items: center;
     transition: visibility $transition, opacity $transition;
 }
 
@@ -20,8 +19,8 @@
 .backdrop-modal {
     position: relative;
     padding: 40px 40px;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: $main-back-color;
 }
 
@@ -66,7 +65,7 @@
 
 .modal-label__input {
     display: flex;
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -80,7 +79,7 @@
 
 .modal-label__comment {
     display: flex;
-    width: 448px;
+    width: 370px;
     resize: none;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -122,8 +121,8 @@
 
 .check-box__span {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 .check-box__link {
@@ -192,17 +191,10 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $max-mobile) {
     .backdrop {
         position: absolute;
-        display: flex;
-        align-items: flex-start;
         margin-top: 93px;
-    }
-
-    .backdrop-modal {
-        width: 450px;
-        height: 609px;
     }
 
     .modal-label__input,
@@ -210,14 +202,9 @@
         max-width: 100%;
     }
 
-    .check-box__span {
-        font-size: 12px;
-        line-height: 1.17;
-    }
-
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $mobile) {
     .backdrop-modal {
         width: 100vw;
     }
@@ -226,29 +213,31 @@
         display: block;
     }
 
-    .check-box__span {
-        font-size: 12px;
-        line-height: 1.17;
-    }
-
     .check-box__link {
         display: block;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .backdrop-modal {
-        width: 450px;
-        height: 609px;
+@media screen and (min-width: $min-tablet) and (max-width: $tablet) {
+    .backdrop {
+        align-items: center;
     }
+}
 
+@media screen and (min-width: $desktop) {
+    .backdrop {
+        align-items: center;
+    }
+    .backdrop-modal {
+        width: 528px;
+        height: 581px;
+    }
+    .check-box__span {
+        font-size: 14px;
+        line-height: 1.71;
+    }
     .modal-label__input,
     .modal-label__comment {
-        width: 370px;
-    }
-
-    .check-box__span {
-        font-size: 12px;
-        line-height: 1.17;
+        width: 448px;
     }
 }

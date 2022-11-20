@@ -1,5 +1,9 @@
 .work {
     padding-bottom: 94px;
+
+    @media screen and (max-width: $tablet) {
+            display: none;
+        }
 }
 
 .work__title {
@@ -43,18 +47,3 @@
     padding-top: 27px;
 }
 
-@media screen and (max-width: 1199px) {
-    .work {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-    
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-}
