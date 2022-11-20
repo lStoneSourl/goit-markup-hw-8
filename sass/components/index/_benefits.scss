@@ -12,29 +12,6 @@
     overflow: hidden;
 }
 
-.benefits__item {
-    list-style-type: none;
-    display: flex;
-    align-items: start;
-    padding: 0;
-    gap: 30px;
-}
-
-.benefits__list {
-    flex-basis: calc(100% - (3 * 30px) / 4);
-}
-
-.benefits__background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    background-color: $main-backgraund;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-
 .benefits__list-title {
     font-weight: 700;
     font-size: 14px;
@@ -50,11 +27,47 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: $main-color;
+}
+
+@media screen and (max-width: 767px) {
+    .benefits__item {
+        display: block;
+    }
+
+    .benefits__list {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .benefits__background {
+        display: block;
+        text-align: center;
+        background: $main-backgraund;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    .benefits__icon {
+        margin: 25px 0;
+    }
+
+    .benefits__list-text {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .benefits__item {
-        flex-wrap: wrap;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            padding: 0;
+            gap: 30px;
     }
 
     .benefits__list {
@@ -62,10 +75,44 @@
     }
 
     .benefits__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 354px;
+        height: 120px;
+        background-color: $main-backgraund;
+        border-radius: 4px;
+        margin-bottom: 30px;
     }
 
     .benefits__list-text {
         max-width: 354px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits__item {
+        list-style-type: none;
+        display: flex;
+        align-items: start;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .benefits__list {
+        flex-basis: calc(100% - (3 * 30px) / 4);
+    }
+
+    .benefits__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: $main-backgraund;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    
 }

@@ -96,6 +96,25 @@
     fill: $main-back-color;
 }
 
+@media screen and (max-width: 767px) {
+    .team__title {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    .employee {
+        display: block;
+    }
+
+    .employee__list {
+        max-width: 450px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .team__title {
         font-size: 28px;

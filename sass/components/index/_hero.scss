@@ -1,5 +1,5 @@
 .hero-section {
-    max-width: 1600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -9,8 +9,9 @@
     background-image: linear-gradient(to bottom,
             $gradient,
             $gradient),
-        url("../../images/background.jpg");
+        url("../../../images/background.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -50,12 +51,41 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .hero-section {
+        display: block;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(to bottom,
+                $gradient,
+                $gradient),
+                url(../../../images/Headermb.jpg);
+    }
+
+    .hero-title {
+        font-size: 26px;
+        line-height: 1.61;
+        max-width: 360px;
+        text-align: center;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        line-height: 1.87;
+        padding: 10px 24px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .hero-section {
         width: 100%;
         padding-top: 118px;
         padding-bottom: 118px;
-        background-image: url(../../../images/Headerimg.jpg);
+        background-image: linear-gradient(to bottom,
+                $gradient,
+                $gradient),
+                url(../../../images/Headerimg.jpg);
+        background-position: initial;
     }
 
     .hero-title {

@@ -91,8 +91,6 @@
     }
 }
 
-
-
 .check-box {
     display: flex;
     align-items: center;
@@ -191,6 +189,50 @@
     &:focus path {
         cursor: pointer;
         fill: $logo-leading-color;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .backdrop {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 93px;
+    }
+
+    .backdrop-modal {
+        width: 450px;
+        height: 609px;
+    }
+
+    .modal-label__input,
+    .modal-label__comment {
+        max-width: 100%;
+    }
+
+    .check-box__span {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .backdrop-modal {
+        width: 100vw;
+    }
+
+    .check-box {
+        display: block;
+    }
+
+    .check-box__span {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    .check-box__link {
+        display: block;
     }
 }
 

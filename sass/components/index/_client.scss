@@ -1,5 +1,7 @@
 .client {
     display: block;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .client__title {
@@ -14,6 +16,7 @@
 
 .client__item {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     gap: 30px;
 }
@@ -47,6 +50,16 @@
 .client__link:focus .client__icon,
 .client__link:hover .client__icon {
     fill: $logo-leading-color;
+}
+
+@media screen and (max-width: 767px) {
+    .client__item {
+        flex-wrap: wrap;
+    }
+
+    .client__list {
+        min-width: 210px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
