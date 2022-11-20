@@ -19,7 +19,6 @@
 }
 
 .employee__list {
-    max-width: 270px;
     background-color: $main-back-color;
     box-shadow:
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -118,6 +117,9 @@
 @media screen and (min-width: $desktop) {
     .employee {
         flex-wrap: nowrap;
+    }
+    .employee__list {
+        max-width: 270px;
     }
     .team__title {
         font-size: 36px;

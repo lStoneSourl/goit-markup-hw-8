@@ -9,9 +9,31 @@
     background-image: linear-gradient(to bottom,
         $gradient,
         $gradient),
-    url(../../../images/Headermb.jpg);
+    url(../../../images/background/backmbimg@1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to bottom,
+                        $gradient,
+                        $gradient),
+                        url("../../../images/background/backmbimg@2x.jpg");
+            }
+        }
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            & {
+                background-image: linear-gradient(to bottom,
+                        $gradient,
+                        $gradient),
+                        url("../../../images/background/backmbimg@3x.jpg");
+            }
+        }
 }
 
 .hero-title {
@@ -57,7 +79,29 @@
         background-image: linear-gradient(to bottom,
                 $gradient,
                 $gradient),
-                url(../../../images/Headerimg.jpg);
+                url(../../../images/background/backtabimg@1x.jpg);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                    screen and (min-resolution: 192dpi),
+                    screen and (min-resolution: 2dppx) {
+                        & {
+                            background-image: linear-gradient(to bottom,
+                                    $gradient,
+                                    $gradient),
+                                    url("../../../images/background/backtabimg@2x.jpg");
+                        }
+                    }
+                
+                @media screen and (min-device-pixel-ratio: 3),
+                    screen and (min-resolution: 288dpi),
+                    screen and (min-resolution: 3dppx) {
+                        & {
+                            background-image: linear-gradient(to bottom,
+                                    $gradient,
+                                    $gradient),
+                                    url("../../../images/background/backtabimg@3x.jpg");
+                        }
+                    }
     }
 }
 
@@ -68,7 +112,28 @@
         background-image: linear-gradient(to bottom,
                 $gradient,
                 $gradient),
-            url("../../../images/background.jpg");
+            url("../../../images/background/backImg@1x.jpg");
+
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    & {
+                        background-image: linear-gradient(to bottom,
+                                $gradient,
+                                $gradient),
+                                url("../../../images/background/backImg@2x.jpg");
+                    }
+                }
+            @media screen and (min-device-pixel-ratio: 3),
+                screen and (min-resolution: 288dpi),
+                screen and (min-resolution: 3dppx) {
+                    & {
+                        background-image: linear-gradient(to bottom,
+                                $gradient,
+                                $gradient),
+                                url("../../../images/background/backImg@3x.jpg");
+                    }
+                }
     }
     .hero-title {
         font-size: 44px;
