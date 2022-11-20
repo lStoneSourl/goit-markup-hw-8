@@ -9,7 +9,7 @@
     background-image: linear-gradient(to bottom,
         $gradient,
         $gradient),
-    url(../../../images/background/backmbimg@1x.jpg);
+    url(../images/background/backmbimg@1x.jpg);
     background-size: cover;
     background-position: center;
 
@@ -20,7 +20,7 @@
                 background-image: linear-gradient(to bottom,
                         $gradient,
                         $gradient),
-                        url("../../../images/background/backmbimg@2x.jpg");
+                        url("../images/background/backmbimg@2x.jpg");
             }
         }
     
@@ -31,7 +31,7 @@
                 background-image: linear-gradient(to bottom,
                         $gradient,
                         $gradient),
-                        url("../../../images/background/backmbimg@3x.jpg");
+                        url("../images/background/backmbimg@3x.jpg");
             }
         }
 }
@@ -79,7 +79,7 @@
         background-image: linear-gradient(to bottom,
                 $gradient,
                 $gradient),
-                url(../../../images/background/backtabimg@1x.jpg);
+                url(../images/background/backtabimg@1x.jpg);
 
                 @media screen and (min-device-pixel-ratio: 2),
                     screen and (min-resolution: 192dpi),
@@ -88,7 +88,7 @@
                             background-image: linear-gradient(to bottom,
                                     $gradient,
                                     $gradient),
-                                    url("../../../images/background/backtabimg@2x.jpg");
+                                    url("../images/background/backtabimg@2x.jpg");
                         }
                     }
                 
@@ -99,7 +99,7 @@
                             background-image: linear-gradient(to bottom,
                                     $gradient,
                                     $gradient),
-                                    url("../../../images/background/backtabimg@3x.jpg");
+                                    url("../images/background/backtabimg@3x.jpg");
                         }
                     }
     }
@@ -112,7 +112,7 @@
         background-image: linear-gradient(to bottom,
                 $gradient,
                 $gradient),
-            url("../../../images/background/backImg@1x.jpg");
+            url("../images/background/backImg@1x.jpg");
 
             @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
@@ -121,7 +121,7 @@
                         background-image: linear-gradient(to bottom,
                                 $gradient,
                                 $gradient),
-                                url("../../../images/background/backImg@2x.jpg");
+                                url("../images/background/backImg@2x.jpg");
                     }
                 }
             @media screen and (min-device-pixel-ratio: 3),
@@ -131,7 +131,7 @@
                         background-image: linear-gradient(to bottom,
                                 $gradient,
                                 $gradient),
-                                url("../../../images/background/backImg@3x.jpg");
+                                url("../images/background/backImg@3x.jpg");
                     }
                 }
     }
