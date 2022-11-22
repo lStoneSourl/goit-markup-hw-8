@@ -107,6 +107,7 @@
 
 @media screen and (min-width: $desktop) {
     .hero-section {
+        max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to bottom,

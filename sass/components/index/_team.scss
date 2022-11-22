@@ -11,7 +11,7 @@
     letter-spacing: 0.03em;
     color: $header-link-color;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .employee {
@@ -108,7 +108,9 @@
         gap: 30px;
         padding: 0;
     }
-
+    .team__title {
+        margin-bottom: 50px;
+    }
     .employee__list {
         max-width: 354px;
     }

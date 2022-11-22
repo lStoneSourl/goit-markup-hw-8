@@ -48,7 +48,8 @@ p {
 
 @media screen and (max-width: $min-mobile) {
     .container {
-        max-width: 100vw;
+        min-width: 320px;
+        max-width: 449px;
     }
 
     .section {
@@ -57,10 +58,20 @@ p {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: $min-mobile) {
+    .container {
+        width: 100vw;
+    }
+    .section {
+        width: 100vw;
+    }
+}
+
 @media screen and (min-width: $mobile) {
     .container {
-        width: 450px;
+        width: 400px;
     }
+    
 }
 
 @media screen and (min-width: $min-tablet) and (max-width: $tablet) {

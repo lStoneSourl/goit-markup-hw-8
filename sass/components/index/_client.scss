@@ -11,7 +11,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $header-link-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .client__item {
@@ -56,6 +56,9 @@
 @media screen and (min-width: $min-tablet) {
     .client__list {
         min-width: 226px;
+    }
+    .client__title {
+        margin-bottom: 50px;
     }
 }
 

@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 93px;
+    gap: 60px;
 }
 
 .footer-logo {
@@ -175,6 +175,9 @@
 }
 
 @media screen and (min-width: $min-tablet) and (max-width: $tablet) {
+    .footer-content>.container {
+        justify-content: space-around;
+    }
     .footer-content>.container>div {
         text-align: center;
     }
@@ -192,6 +195,7 @@
     .footer-content>.container {
         display: flex;
         align-items: baseline;
+        gap: 93px;
     }
     .contact-us__mail {
         width: 358px;

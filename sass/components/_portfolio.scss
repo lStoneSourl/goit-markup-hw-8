@@ -13,10 +13,10 @@
 
 .portfolio-filter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style-type: none;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     gap: 8px;
 }
 
@@ -52,7 +52,6 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 100%;
     gap: 30px;
 }
 
@@ -129,6 +128,7 @@
 @media screen and (min-width: $min-tablet) and (max-width: $tablet) {
     .portfolio-filter {
         margin-bottom: 30px;
+        justify-content: center;
     }
 
     .portfolio-card {
@@ -151,6 +151,10 @@
 }
 
 @media screen and (min-width: $desktop) {
+    .portfolio-filter {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
     .portfolio-card {
         grid-template-columns: 1fr 1fr 1fr;
     }

@@ -22,7 +22,7 @@
 }
 
 .mobile-nav {
-    margin-bottom: 100px;
+    margin-bottom: 306px;
 }
 
 .mobile-nav__item {
@@ -34,7 +34,7 @@
     list-style-type: none;
 }
 
-.mobile-nav__list {
+.mobile-nav__list:not(:last-child) {
     padding-bottom: 32px;
 }
 
@@ -51,6 +51,11 @@
         color: $logo-leading-color;
         cursor: pointer;
     }
+}
+
+.select {
+    color: $logo-leading-color;
+    cursor: pointer;
 }
 
 .mobile-contact {
@@ -75,6 +80,7 @@
 .tel {
     font-size: 34px;
     line-height: 1.18;
+    color: $logo-leading-color;
 }
 
 .mail {
@@ -103,6 +109,7 @@
 }
 
 .mobile-link {
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     text-decoration: none;
