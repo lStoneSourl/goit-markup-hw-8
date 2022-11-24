@@ -961,6 +961,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
@@ -1027,6 +1028,9 @@ p {
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+  }
+  .benefits__list-title {
+    text-align: start;
   }
   .benefits__list-text {
     max-width: 354px;
@@ -1696,7 +1700,7 @@ p {
   fill: #2196F3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 450px) and (max-width: 767px) {
   .backdrop {
     position: absolute;
     padding-top: 93px;
@@ -1707,8 +1711,15 @@ p {
   }
 }
 @media screen and (max-width: 450px) {
+  .backdrop {
+    padding-top: 93px;
+  }
   .backdrop-modal {
     width: 100vw;
+  }
+  .modal-label__input,
+.modal-label__comment {
+    max-width: 100%;
   }
   .check-box {
     display: block;

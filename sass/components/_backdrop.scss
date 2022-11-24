@@ -191,7 +191,7 @@
     }
 }
 
-@media screen and (max-width: $max-mobile) {
+@media screen and (min-width: $mobile) and (max-width: $max-mobile) {
     .backdrop {
         position: absolute;
         padding-top: 93px;
@@ -205,8 +205,16 @@
 }
 
 @media screen and (max-width: $mobile) {
+    .backdrop {
+        padding-top: 93px;
+    }
     .backdrop-modal {
         width: 100vw;
+    }
+
+    .modal-label__input,
+    .modal-label__comment {
+        max-width: 100%;
     }
 
     .check-box {
